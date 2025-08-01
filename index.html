@@ -51,14 +51,7 @@
                             <li class="nav-item"><a class="nav-link smoth-animation" href="#footer">Footer</a></li>
                         </ul>
                         <!-- End Mainmanu Nav -->
-                    </nav>
-                    <div class="theme-switch-wrapper">
-                      <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
-                        <div class="slider round"></div>
-                      </label>
-                      <span class="mode-label" id="mode-text">Light</span>
-                    </div>
+                        
                     <!-- Start Header Right  -->
                     <div class="header-right">
                         <a class="rn-btn" target="_blank" href="https://github.com/yottajunaid"><span>GitHub</span></a>
@@ -1653,31 +1646,6 @@
     <script src="assets/js/vendor/particles.js"></script>
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
-
-    <!-- light and dark mode toggle -->
-    <script>
-      const toggleSwitch = document.querySelector('#checkbox');
-      const currentTheme = localStorage.getItem('theme');
-      const modeText = document.getElementById('mode-text');
-
-      if (currentTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        toggleSwitch.checked = true;
-        modeText.textContent = 'Dark';
-      }
-
-      toggleSwitch.addEventListener('change', function () {
-        if (this.checked) {
-          document.body.classList.add('dark-mode');
-          localStorage.setItem('theme', 'dark');
-          modeText.textContent = 'Dark';
-        } else {
-          document.body.classList.remove('dark-mode');
-          localStorage.setItem('theme', 'light');
-          modeText.textContent = 'Light';
-        }
-      });
-    </script>
    
 </body>
 
