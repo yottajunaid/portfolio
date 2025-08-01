@@ -1653,6 +1653,32 @@
     <script src="assets/js/vendor/particles.js"></script>
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- light and dark mode toggle -->
+    <script>
+      const toggleSwitch = document.querySelector('#checkbox');
+      const currentTheme = localStorage.getItem('theme');
+      const modeText = document.getElementById('mode-text');
+
+      if (currentTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        toggleSwitch.checked = true;
+        modeText.textContent = 'Dark';
+      }
+
+      toggleSwitch.addEventListener('change', function () {
+        if (this.checked) {
+          document.body.classList.add('dark-mode');
+          localStorage.setItem('theme', 'dark');
+          modeText.textContent = 'Dark';
+        } else {
+          document.body.classList.remove('dark-mode');
+          localStorage.setItem('theme', 'light');
+          modeText.textContent = 'Light';
+        }
+      });
+    </script>
+   
 </body>
 
 </html>
