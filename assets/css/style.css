@@ -19872,4 +19872,84 @@ body.white-version {
     color: var(--color-white) !important;
 }
 
+/* Light and Dark Mode Toggle */
+
+/* Toggle Container */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Toggle Label */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Hide default checkbox */
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Checked state */
+input:checked + .slider {
+  background-color: #333;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+/* Mode Label */
+.mode-label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .mode-label {
+  color: #f0f0f0;
+}
+
+
 /*# sourceMappingURL=../maps/style.css.map */
