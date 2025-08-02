@@ -19919,5 +19919,11 @@ body.white-version {
   white-space: nowrap;
 }
 
+/* Tryhackme Badge */
+.tryhackme-title {
+    margin-top: 40px;
+    color: #000 !important;
+}
+
 
 /*# sourceMappingURL=../maps/style.css.map */
