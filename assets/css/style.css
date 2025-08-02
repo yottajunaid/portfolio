@@ -19872,83 +19872,30 @@ body.white-version {
     color: var(--color-white) !important;
 }
 
-/* Light and Dark Mode Toggle */
-
-/* Toggle Container */
-.theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 20px;
-  right: 30px;
-  z-index: 1000;
-  font-family: 'Segoe UI', sans-serif;
+.skill-box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-/* Toggle Label */
-.theme-switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 30px;
-  margin-right: 10px;
+.skill-box {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 15px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #444444;
+    transition: all 0.3s ease;
+    cursor: default;
 }
 
-/* Hide default checkbox */
-.theme-switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* Slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 24px;
-  width: 24px;
-  left: 3px;
-  bottom: 3px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-/* Checked state */
-input:checked + .slider {
-  background-color: #333;
-}
-
-input:checked + .slider:before {
-  transform: translateX(30px);
-}
-
-/* Mode Label */
-.mode-label {
-  font-weight: 600;
-  color: #333;
-}
-
-/* Dark mode */
-body.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
-body.dark-mode .mode-label {
-  color: #f0f0f0;
+.skill-box:hover {
+    color: #6f42c1; /* Purple hover text */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
 }
 
 
