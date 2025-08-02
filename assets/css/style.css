@@ -19898,5 +19898,26 @@ body.white-version {
     transform: translateY(-3px);
 }
 
+/* Grade box for experience Tab */
+.date-of-time {
+  white-space: nowrap;
+  padding-left: 10px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Important for responsiveness */
+}
+
+.date-of-time {
+  flex-grow: 1;
+  text-align: right;
+  white-space: nowrap;
+}
+
 
 /*# sourceMappingURL=../maps/style.css.map */
