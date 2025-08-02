@@ -19900,12 +19900,27 @@ body.white-version {
 
 /* Grade box for experience Tab */
 .date-of-time {
-  white-space: nowrap;
-  padding-left: 10px;
-  max-width: 100%;
-  overflow-wrap: break-word;
-  word-break: break-word;
+    display: flex;
+    justify-content: flex-end;     /* Align content to the right */
+    align-items: center;
+    margin-top: 8px;
 }
+
+.date-of-time span {
+    display: inline-block;
+    background-color: #f6f6ff;
+    color: #7e22ce;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;           /* Prevent breaking the text */
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .heading {
   display: flex;
   justify-content: space-between;
@@ -19913,11 +19928,6 @@ body.white-version {
   flex-wrap: wrap; /* Important for responsiveness */
 }
 
-.date-of-time {
-  flex-grow: 1;
-  text-align: right;
-  white-space: nowrap;
-}
 
 /* Tryhackme Badge */
 .tryhackme-title {
