@@ -19933,7 +19933,7 @@ body.white-version {
 .tryhackme-title {
     margin-top: 40px;
     color: #000 !important;
-	font-size: 2px;   /* increase size */
+	font-size: 30px;   /* increase size */
     font-weight: 700;  /* make bolder */
 }
 
@@ -19961,8 +19961,8 @@ body.white-version {
 }
 
 .badge-card img {
-  width: 100px;
-  height: 100px;
+  width: auto;
+  height: auto;
   object-fit: contain;
   display: block;
   margin: 0 auto 10px;
@@ -19970,12 +19970,9 @@ body.white-version {
 
 .badge-card p {
   margin: 0;
-  font-size: 0.95rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--text, #333);
-  width: 120px;       /* fixed width */
-  height: 120px;      /* fixed height */
-  object-fit: contain; /* keeps aspect ratio */
   margin: 0 auto 10px;
   display: block;
 }
