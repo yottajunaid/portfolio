@@ -19933,6 +19933,8 @@ body.white-version {
 .tryhackme-title {
     margin-top: 40px;
     color: #000 !important;
+	font-size: 2rem;   /* increase size */
+    font-weight: 700;  /* make bolder */
 }
 
 .badge-grid {
@@ -19968,7 +19970,13 @@ body.white-version {
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--text, #333);
+  width: 120px;       /* fixed width */
+  height: 120px;      /* fixed height */
+  object-fit: contain; /* keeps aspect ratio */
+  margin: 0 auto 10px;
+  display: block;
 }
+
 
 
 
