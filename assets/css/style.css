@@ -19933,7 +19933,7 @@ body.white-version {
 .tryhackme-title {
     margin-top: 40px;
     color: #000 !important;
-	font-size: 2rem;   /* increase size */
+	font-size: 2px;   /* increase size */
     font-weight: 700;  /* make bolder */
 }
 
@@ -19942,6 +19942,7 @@ body.white-version {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
   margin-top: 20px;
+  flex: 1; /* take remaining space */
   text-align: center;
 }
 
@@ -19960,8 +19961,10 @@ body.white-version {
 }
 
 .badge-card img {
-  max-width: 120px;
-  height: auto;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
   margin: 0 auto 10px;
 }
 
@@ -19975,6 +19978,13 @@ body.white-version {
   object-fit: contain; /* keeps aspect ratio */
   margin: 0 auto 10px;
   display: block;
+}
+
+.badge-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;        /* space between iframe and first badge */
 }
 
 
