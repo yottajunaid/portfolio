@@ -19984,52 +19984,5 @@ body.white-version {
   gap: 20px;        /* space between iframe and first badge */
 }
 
-/* footer */
-.footer-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 32px;
-}
-
-.menu-footer {
-    list-style: none;
-    padding: 0;
-}
-
-.menu-footer li {
-    margin-bottom: 8px;
-}
-
-.menu-footer a {
-    text-decoration: none;
-    color: #fff;  /* adjust for theme */
-    transition: color 0.3s;
-}
-
-.menu-footer a:hover {
-    color: #ff9800; /* hover effect */
-}
-
-.menu-footer {
-    list-style: none;
-    padding: 0;
-    column-count: 2;       /* 👈 forces 2 columns */
-    column-gap: 32px;      /* space between columns */
-}
-
-.menu-footer li {
-    break-inside: avoid;   /* prevents items from breaking weirdly */
-    margin-bottom: 8px;
-}
-
-/* 📱 Mobile rule: force only 2 columns */
-@media (max-width: 768px) {
-    .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-}
-
-
 
 /*# sourceMappingURL=../maps/style.css.map */
