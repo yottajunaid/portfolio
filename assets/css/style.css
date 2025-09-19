@@ -19988,7 +19988,7 @@ body.white-version {
 .footer-links {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 120px;
+    gap: 32px;
 }
 
 .menu-footer {
@@ -20014,7 +20014,7 @@ body.white-version {
 @media (max-width: 768px) {
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
-        gap: 120px;
+        gap: 24px;
     }
 }
 
