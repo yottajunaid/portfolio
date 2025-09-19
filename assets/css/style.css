@@ -19986,8 +19986,9 @@ body.white-version {
 
 /* footer */
 .footer-links {
-    display: flex;
-    gap: 40px; /* spacing between columns */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 120px;
 }
 
 .menu-footer {
@@ -20001,12 +20002,20 @@ body.white-version {
 
 .menu-footer a {
     text-decoration: none;
-    color: #fff;  /* change based on your theme */
+    color: #fff;  /* adjust for theme */
     transition: color 0.3s;
 }
 
 .menu-footer a:hover {
     color: #ff9800; /* hover effect */
+}
+
+/* 📱 Mobile rule: force only 2 columns */
+@media (max-width: 768px) {
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 120px;
+    }
 }
 
 
