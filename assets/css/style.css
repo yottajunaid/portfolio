@@ -19984,6 +19984,30 @@ body.white-version {
   gap: 20px;        /* space between iframe and first badge */
 }
 
+/* footer */
+.footer-links {
+    display: flex;
+    gap: 40px; /* spacing between columns */
+}
+
+.menu-footer {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-footer li {
+    margin-bottom: 8px;
+}
+
+.menu-footer a {
+    text-decoration: none;
+    color: #fff;  /* change based on your theme */
+    transition: color 0.3s;
+}
+
+.menu-footer a:hover {
+    color: #ff9800; /* hover effect */
+}
 
 
 
