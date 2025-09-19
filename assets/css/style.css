@@ -20010,6 +20010,18 @@ body.white-version {
     color: #ff9800; /* hover effect */
 }
 
+.menu-footer {
+    list-style: none;
+    padding: 0;
+    column-count: 2;       /* 👈 forces 2 columns */
+    column-gap: 32px;      /* space between columns */
+}
+
+.menu-footer li {
+    break-inside: avoid;   /* prevents items from breaking weirdly */
+    margin-bottom: 8px;
+}
+
 /* 📱 Mobile rule: force only 2 columns */
 @media (max-width: 768px) {
     .footer-links {
